@@ -7,7 +7,7 @@ Following is the list of actively maintained packages
 - [cliui](https://github.com/poppinss/cliui): Opinionated UI KIT for Command Line apps
 - [youch](https://github.com/poppinss/youch): Pretty printer for errors
 - [hooks](https://github.com/poppinss/hooks): A simple yet effective implementation for executing hooks around an event.
-- [co-compose](https://github.com/poppinss/co-compose): Implementation of the chain of responsibility pattern.
+- [middleware](https://github.com/poppinss/middleware): Implementation of the chain of responsibility pattern.
 - [oauth-client](https://github.com/poppinss/oauth-client): A framework agnostic package to implement "Login with" flow using OAuth compliant authorization servers.
 - [file-generator](https://github.com/poppinss/file-generator): Generate fake in-memory files for varying sizes.
 - [intl-formatter](https://github.com/poppinss/intl-formatter): Memoized API for Intl (To be used within Node).
