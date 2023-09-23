@@ -28,6 +28,6 @@ Please carefully read the contribution docs before creating a pull request
 <!-- If your change requires a documentation PR, please link it appropriately -->
 <!-- If you're unsure about any of these, don't hesitate to ask. We're here to help! -->
 
-- [ ] I have read the [contribution guide](../docs/CONTRIBUTING.md).
+- [ ] I have read the [contribution guide](https://github.com/poppinss/.github/blob/main/docs/CONTRIBUTING.md).
 - [ ] I have linked an issue or discussion.
 - [ ] I have updated the documentation accordingly.
