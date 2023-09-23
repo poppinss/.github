@@ -14,3 +14,4 @@ Following is the list of actively maintained packages
 - [macroable](https://github.com/poppinss/macroable): Extend classes from outside in using Macros and getters.
 - [prompts](https://github.com/poppinss/prompts): Wrapper over enquirer with better support for testing.
 - [colors](https://github.com/poppinss/colors): Wrapper over kleur with better support for testing.
+- [chokidar-ts](https://github.com/poppinss/chokidar-ts): File watcher for TypeScript projects.
