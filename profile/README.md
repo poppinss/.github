@@ -3,6 +3,7 @@ Poppinss is a collection of small utility packages used by the AdonisJS team.
 ## Actively maintained
 Following is the list of actively maintained packages
 
+- [object-builder](https://github.com/poppinss/object-builder): A convenience class to create an object with dynamic properties.
 - [utils](https://github.com/poppinss/utils): A toolkit of utilities used across all the AdonisJS, Edge, and Japa packages.
 - [cliui](https://github.com/poppinss/cliui): Opinionated UI KIT for Command Line apps
 - [youch](https://github.com/poppinss/youch): Pretty printer for errors
