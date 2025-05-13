@@ -57,26 +57,24 @@ Following is the list of tools in use.
 | Tool | Usage |
 |-------|--------|
 | TypeScript | All of the repos are authored in TypeScript. The compiled JavaScript and type definitions are published on npm. |
-| TS Node | We use [ts-node](https://typestrong.org/ts-node/) to run tests or scripts without compiling TypeScript. The main goal of ts-node is to have a faster feedback loop during development |
-| SWC | [SWC](https://swc.rs/) is a Rust based TypeScript compiler. TS Node ships with first-class support for using SWC over the TypeScript official compiler. The main reason for using SWC is the speed gain. |
-| NP | We use [np](https://github.com/sindresorhus/np) to publish our packages on npm. Np does all the heavy lifting of creating a release and publishes it on npm and Github. The np config is defined within the `package.json` file. |
-| ESLint | ESLint helps us enforce a consistent coding style across all the repos with multiple contributors. All our ESLint rules are published under the [eslint-plugin-adonis](https://github.com/adonisjs-community/eslint-plugin-adonis) package. |
+| TSUP | Certain packages are compiled to JS using [tsup](https://github.com/egoist/tsup) and not `tsc` |
+| TS Exec | We use [ts-exec](https://github.com/poppinss/ts-exec) to run tests or scripts without compiling TypeScript. The main goal of `ts-exec` is to have a faster feedback loop during development |
+| Release It | We use [release-it](https://github.com/release-it/release-it) to publish our packages on npm using Github actions. |
+| ESLint | ESLint helps us enforce a consistent coding style across all the repos with multiple contributors. All our ESLint rules are published under the [@adonisjs/eslint-config](https://github.com/adonisjs/eslint-config) package. |
 | Prettier | We use prettier to format the codebase for consistent visual output. If you need clarification about why we are using ESLint and Prettier, please read the [Prettier vs. Linters](https://prettier.io/docs/en/comparison.html) doc on the Prettier website. |
 | EditorConfig | The `.editorconfig` file in the root of every project configures your Code editor to use a set of rules for indentation and whitespace management. Again, Prettier is used for post-formatting your code, and Editorconfig is used to configure the editor in advance. |
 | Conventional Changelog | All of the commits across all the repos uses [commitlint](https://github.com/conventional-changelog/commitlint/#what-is-commitlint) to enforce consistent commit messages. |
-| Husky | We use [husky](https://typicode.github.io/husky/#/) to enforce commit conventions when committing the code. Husky is a git hooks system written in Node |
 
 ## Commands
 
 | Command | Description |
 |-------|--------|
-| `npm run test` | Run project tests using `ts-node` |
+| `npm run test` | Run project tests using `ts-exec` |
 | `npm run compile` | Compile the TypeScript project to JavaScript. The compiled output is written inside the `build` directory |
 | `npm run typecheck` | Perform type checking without creating the JavaScript output build. |
-| `npm run release` | Start the release process using `np` |
+| `npm run release` | Start the release process using `release-it`. Should be run in CI only |
 | `npm run lint` | Lint the codebase using ESlint |
 | `npm run format` | Format the codebase using Prettier | 
-| `npm run sync-labels` | Sync the labels defined inside the `.github/labels.json` file with Github. This command is for the project admin only. |
 
 ## Coding style
 All of my (Harminder Virk) projects are written in TypeScript. But, slowly, I am also moving everything to pure ESM.

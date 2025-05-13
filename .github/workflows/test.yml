@@ -12,41 +12,41 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [20.x, 22.x]
+        node-version: ["latest"]
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run tests
-      run: npm test
+      - name: Run tests
+        run: npm test
 
   test_windows:
     if: ${{ !inputs.disable-windows }}
     runs-on: windows-latest
     strategy:
       matrix:
-        node-version: [20.x, 22.x]
+        node-version: ["latest"]
 
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: ${{ matrix.node-version }}
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ matrix.node-version }}
 
-    - name: Install dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Run tests
-      run: npm test
+      - name: Run tests
+        run: npm test
