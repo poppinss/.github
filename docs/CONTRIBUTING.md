@@ -63,7 +63,7 @@ Following is the list of tools in use.
 | ESLint | ESLint helps us enforce a consistent coding style across all the repos with multiple contributors. All our ESLint rules are published under the [@adonisjs/eslint-config](https://github.com/adonisjs/eslint-config) package. |
 | Prettier | We use prettier to format the codebase for consistent visual output. If you need clarification about why we are using ESLint and Prettier, please read the [Prettier vs. Linters](https://prettier.io/docs/en/comparison.html) doc on the Prettier website. |
 | EditorConfig | The `.editorconfig` file in the root of every project configures your Code editor to use a set of rules for indentation and whitespace management. Again, Prettier is used for post-formatting your code, and Editorconfig is used to configure the editor in advance. |
-| Conventional Changelog | All of the commits across all the repos uses [commitlint](https://github.com/conventional-changelog/commitlint/#what-is-commitlint) to enforce consistent commit messages. |
+| Conventional Commits | We use [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) for writing commit messages. Later, we use release-it to automatically bump the release version and generate a changelog based upon the commit messages. |
 
 ## Commands
 
