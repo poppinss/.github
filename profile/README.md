@@ -1,9 +1,8 @@
-Poppinss is a collection of small utility packages used by the AdonisJS team.
+Poppinss is a collection of small utility packages used by AdonisJS, VineJS, Japa and many more projects built by [Harminder Virk](https://github.com/thetutlage)
 
 ## Actively maintained
 Following is the list of actively maintained packages
 
-- [object-builder](https://github.com/poppinss/object-builder): A convenience class to create an object with dynamic properties.
 - [exception](https://github.com/poppinss/exception): Utility to create custom exceptions with support for error code, status, and the help description.
 - [string](https://github.com/poppinss/string): A collection of helpers to perform operations on/related to a string value.
 - [types](https://github.com/poppinss/types): TypeScript helpers to easily transform and represent types.
